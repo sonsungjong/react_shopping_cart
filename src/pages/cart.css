@@ -3,7 +3,7 @@
 .my-element
 {
     min-height: 80vh;
-    max-width:96rem;
+    max-width: 1152px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -16,10 +16,6 @@
     padding: 1rem; /* 모든 방향의 패딩 설정 */
 }
 
-.width-300px
-{
-    width:300px;
-}
 
 .vertical-center-flex-end
 {

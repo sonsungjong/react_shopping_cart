@@ -30,30 +30,33 @@ export default function Cart()
                 <>
                 {/* min-h-[80vh] grid md:grid-cols-2 max-w-6xl mx-auto */}
                 <div className="my-element">
+                    {/* w-[300px] */}
+                    <div >
+                        {/* flex flex-col justify-center items-end p-5 space-y-5 mt-14 */}
+                        <div className="vertical-center-flex-end">
+                            {/* font-bold text-lg text-red-800 */}
+                            <h1 className="bold-large-red-text">
+                                장바구니 내역
+                            </h1>
+                            <p>
+                                {/* text-gray-800 font-bold */}
+                                <span className="bold-dark-text">
+                                    담긴 갯수
+                                </span>
+                                <span>: {cart.length}</span>
+                            </p>
+                            <p>
+                                {/* text-gray-800 font-bold */}
+                                <span className="bold-dark-text">총 가격</span>
+                                <span>: {Math.floor(totalCart * 1400).toLocaleString('ko-KR')} 원</span>
+                            </p>
+                        </div>
+                    </div>
+
+
                     {/* flex flex-col justify-center items-center p-3 */}
                     <div className="centered-flex-column">
-                        {/* w-[300px] */}
-                        <div className="width-300px">
-                            {/* flex flex-col justify-center items-end p-5 space-y-5 mt-14 */}
-                            <div className="vertical-center-flex-end">
-                                {/* font-bold text-lg text-red-800 */}
-                                <h1 className="bold-large-red-text">
-                                    장바구니 요약
-                                </h1>
-                                <p>
-                                    {/* text-gray-800 font-bold */}
-                                    <span className="bold-dark-text">
-                                        담긴 갯수
-                                    </span>
-                                    <span>: {cart.length}</span>
-                                </p>
-                                <p>
-                                    {/* text-gray-800 font-bold */}
-                                    <span className="bold-dark-text">총 가격</span>
-                                    <span>: {Math.floor(totalCart * 1400).toLocaleString('ko-KR')} 원</span>
-                                </p>
-                            </div>
-                        </div>
+                        
 
                         {
                             cart.map((cartItem, idx)=>{
