@@ -11,7 +11,7 @@ const cartSlice = createSlice({
     initialState,
     reducers:{
         addToCart(state, action){
-            console.log(action);        // 매개변수의 값을 로그로 출력해본다
+            //console.log(action);        // 매개변수의 값을 로그로 출력해본다
             state.push(action.payload);
         },
         // 제거도 만든다

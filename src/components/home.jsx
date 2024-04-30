@@ -26,7 +26,6 @@ export default function Home()
 
     return(
         <div>
-            Home
             {
                 //min-h-screen w-full flex justify-center items-center
                 loading ? (<div className="my-loading">
