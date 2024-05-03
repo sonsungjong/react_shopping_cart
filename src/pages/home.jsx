@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Circles } from "react-loader-spinner";
-import ProductTile from "./product-tile/product-tile";
+import ProductTile from "../components/product-tile/product-tile";
 import './home.css'
 
 export default function Home()

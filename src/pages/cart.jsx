@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import CartTile from "../components/cart-tile/cart-tile";
 import './cart.css';
 
-
 export default function Cart()
 {
 

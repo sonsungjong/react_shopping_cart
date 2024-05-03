@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Cart from './pages/cart';
-import Home from './components/home';
+import Home from './pages/home';
 import Header from './components/header/header';
 // npm install -D tailwindcss
 // npx tailwindcss init
@@ -24,5 +24,3 @@ function App() {
 }
 
 export default App;
-
-// 72800
