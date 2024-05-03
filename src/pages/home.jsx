@@ -27,12 +27,10 @@ export default function Home()
     return(
         <div>
             {
-                //min-h-screen w-full flex justify-center items-center
                 loading ? (<div className="my-loading">
                     <Circles height={'120'} width={'120'} color="rgb(127, 29, 29)" visible={true}/>
                 </div>)
                 : 
-                //min-h-[80vh] grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl mx-auto p-3
                 <div className="my-product-grid">
                     {
                         products && products.length ? products.map((e, idx)=>{

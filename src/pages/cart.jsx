@@ -6,7 +6,6 @@ import './cart.css';
 
 export default function Cart()
 {
-
     //const state = useSelector(state=>state);
     //console.log(state);         // 리덕스 state에 담긴 것을 출력해본다
 
@@ -22,41 +21,30 @@ export default function Cart()
     }, [cart]);
 
     return(
-        // flex justify-center
         <div>
             {
                 cart && cart.length ?
                 <>
-                {/* min-h-[80vh] grid md:grid-cols-2 max-w-6xl mx-auto */}
                 <div className="my-element">
-                    {/* w-[300px] */}
-                    <div >
-                        {/* flex flex-col justify-center items-end p-5 space-y-5 mt-14 */}
+                    <div>
                         <div className="vertical-center-flex-end">
-                            {/* font-bold text-lg text-red-800 */}
                             <h1 className="bold-large-red-text">
                                 장바구니 내역
                             </h1>
                             <p>
-                                {/* text-gray-800 font-bold */}
                                 <span className="bold-dark-text">
                                     담긴 갯수
                                 </span>
                                 <span>: {cart.length}</span>
                             </p>
                             <p>
-                                {/* text-gray-800 font-bold */}
                                 <span className="bold-dark-text">총 가격</span>
                                 <span>: {Math.floor(totalCart * 1400).toLocaleString('ko-KR')} 원</span>
                             </p>
                         </div>
                     </div>
 
-
-                    {/* flex flex-col justify-center items-center p-3 */}
                     <div className="centered-flex-column">
-                        
-
                         {
                             cart.map((cartItem, idx)=>{
                                 return(
@@ -70,12 +58,9 @@ export default function Cart()
 
                 </>
                 : 
-                // min-h-[80vh] flex flex-col items-center justify-center
                 <div className="centered-flex-column-min-height">
-                    {/* text-gray-800 font-bold text-xl mb-2 */}
                     <h1 className="bold-dart-text large-text-margin-bottom">텅 빈 장바구니</h1>
                     <Link to={"/"}>
-                        {/* bg-red-950 text-white border-2 rounded-lg font-bold p-4 */}
                         <button className="bold-red-button">
                             담으러 가기
                         </button>
