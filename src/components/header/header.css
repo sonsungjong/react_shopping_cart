@@ -24,7 +24,6 @@
     display: flex; /* Flexbox 레이아웃을 활성화합니다. */
     align-items: center; /* Flex 아이템들을 세로축으로 중앙 정렬합니다. */
     --space-x: 24px; /* Flex 아이템들 사이의 수평 간격을 설정합니다. */
-    color: #4a5568; 
     font-weight: 600; /* font-semibold에 해당하는 스타일입니다. */
     padding:0 10px;
 }
@@ -34,6 +33,7 @@
 }
 
 .nav-li{
+    color: #4a5568; 
     cursor:pointer;
 }
 
