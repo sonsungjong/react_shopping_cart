@@ -9,7 +9,7 @@ export default function Cart()
     //const state = useSelector(state=>state);
     //console.log(state);         // 리덕스 state에 담긴 것을 출력해본다
 
-    const {cart} = useSelector(state=>state);
+    const cart = useSelector(state=>state.cart);
     const [totalCart, setTotalCart] = useState(0);
     console.log(cart, totalCart);
 
@@ -48,7 +48,7 @@ export default function Cart()
                         {
                             cart.map((cartItem, idx)=>{
                                 return(
-                                    <CartTile cartItem={cartItem}/>
+                                    <CartTile cartItem={cartItem} key={idx}/>
                                 )
                             })
                         }

@@ -17,7 +17,8 @@ export default function ProductTile({product})
     }
 
     // cart 프로퍼티를 추출
-    const {cart} = useSelector((state)=>state);
+    //const {cart} = useSelector((state)=>state);
+    const cart = useSelector((state)=>state.cart);
 
     return (
         <>
